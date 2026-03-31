@@ -16,14 +16,8 @@ import Services from "./components/Services";
 import TrustStrip from "./components/TrustStrip";
 import WasteRealityStats from "./components/WasteRealityStats";
 import WhatsAppButton from "./components/WhatsAppButton";
-import BrochuresIndex from "./pages/BrochuresIndex";
+import BrochuresFull from "./pages/BrochuresFull";
 import VisitingCard from "./pages/VisitingCard";
-import BrochureCover from "./pages/brochures/BrochureCover";
-import BrochureHospitals from "./pages/brochures/BrochureHospitals";
-import BrochureOffices from "./pages/brochures/BrochureOffices";
-import BrochureSchools from "./pages/brochures/BrochureSchools";
-import BrochureSocieties from "./pages/brochures/BrochureSocieties";
-import BrochureUniversities from "./pages/brochures/BrochureUniversities";
 
 const queryClient = new QueryClient();
 
@@ -42,13 +36,7 @@ function useHash() {
 function AppContent() {
   const hash = useHash();
 
-  if (hash === "#brochures") return <BrochuresIndex />;
-  if (hash === "#brochure/cover") return <BrochureCover />;
-  if (hash === "#brochure/schools") return <BrochureSchools />;
-  if (hash === "#brochure/universities") return <BrochureUniversities />;
-  if (hash === "#brochure/hospitals") return <BrochureHospitals />;
-  if (hash === "#brochure/societies") return <BrochureSocieties />;
-  if (hash === "#brochure/offices") return <BrochureOffices />;
+  if (hash === "#brochures") return <BrochuresFull />;
   if (hash === "#visiting-card") return <VisitingCard />;
 
   return (
