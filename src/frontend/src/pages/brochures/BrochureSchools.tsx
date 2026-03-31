@@ -6,7 +6,7 @@ export default function BrochureSchools() {
   return (
     <BrochureLayout orgType="Schools">
       {/* Company Intro */}
-      <section className="mb-5">
+      <section className="mb-6">
         <p className="text-base text-gray-700 leading-relaxed">
           Ecowaste Management Solutions will provide comprehensive, eco-friendly
           waste management products and cleaning services to institutions across
@@ -16,19 +16,19 @@ export default function BrochureSchools() {
       </section>
 
       {/* Key Stats */}
-      <section className="mb-5">
+      <section className="mb-6">
         <h2 className="text-xl font-bold text-green-800 border-l-4 border-green-600 pl-3 mb-3">
           Key Statistics
         </h2>
         <div className="grid grid-cols-2 gap-4">
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <div className="text-3xl font-extrabold text-green-700">62M</div>
+          <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+            <div className="text-4xl font-extrabold text-green-700">62M</div>
             <div className="text-sm text-gray-600">
               tonnes of solid waste generated in India annually
             </div>
           </div>
-          <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-            <div className="text-3xl font-extrabold text-orange-600">250M+</div>
+          <div className="bg-orange-50 border border-orange-200 rounded-lg p-5">
+            <div className="text-4xl font-extrabold text-orange-600">250M+</div>
             <div className="text-sm text-gray-600">
               students affected by poor waste habits in schools nationwide
             </div>
@@ -37,13 +37,13 @@ export default function BrochureSchools() {
       </section>
 
       {/* Two-column layout */}
-      <div className="grid grid-cols-2 gap-8 mb-5">
+      <div className="grid grid-cols-2 gap-8 mb-6">
         {/* Challenges */}
         <section>
           <h2 className="text-base font-bold text-green-800 mb-2">
             Waste Challenges in Schools
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "No proper waste segregation system",
               "Overflowing and unhygienic dustbins",
@@ -66,7 +66,7 @@ export default function BrochureSchools() {
           <h2 className="text-base font-bold text-green-800 mb-2">
             What We Will Provide
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "Colour-coded bins for classrooms and premises",
               "Dry and wet segregation setup",
@@ -86,11 +86,11 @@ export default function BrochureSchools() {
       </div>
 
       {/* Recommended Package */}
-      <section className="mb-4">
+      <section className="mb-5">
         <h2 className="text-xl font-bold text-green-800 border-l-4 border-green-600 pl-3 mb-3">
           Recommended Package
         </h2>
-        <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+        <div className="bg-green-50 border border-green-200 rounded-lg p-7">
           <div className="flex items-center justify-between mb-2">
             <span className="font-bold text-green-800 text-lg">
               Basic Package
@@ -102,7 +102,7 @@ export default function BrochureSchools() {
           <p className="text-base text-gray-600 mb-3">
             Ideal for small schools, clinics, and small offices.
           </p>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "Colour-coded waste bins (basic setup)",
               "Basic dry and wet segregation system",
@@ -128,7 +128,7 @@ export default function BrochureSchools() {
       <AddOnsBlock />
 
       {/* Key Message */}
-      <div className="my-4 bg-green-700 text-white rounded-lg p-4 text-center">
+      <div className="my-5 bg-green-700 text-white rounded-lg p-4 text-center">
         <p className="font-semibold text-base italic">
           "A clean school builds clean habits for life."
         </p>

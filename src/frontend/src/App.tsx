@@ -17,6 +17,7 @@ import TrustStrip from "./components/TrustStrip";
 import WasteRealityStats from "./components/WasteRealityStats";
 import WhatsAppButton from "./components/WhatsAppButton";
 import BrochuresIndex from "./pages/BrochuresIndex";
+import VisitingCard from "./pages/VisitingCard";
 import BrochureHospitals from "./pages/brochures/BrochureHospitals";
 import BrochureOffices from "./pages/brochures/BrochureOffices";
 import BrochureSchools from "./pages/brochures/BrochureSchools";
@@ -46,6 +47,7 @@ function AppContent() {
   if (hash === "#brochure/hospitals") return <BrochureHospitals />;
   if (hash === "#brochure/societies") return <BrochureSocieties />;
   if (hash === "#brochure/offices") return <BrochureOffices />;
+  if (hash === "#visiting-card") return <VisitingCard />;
 
   return (
     <>

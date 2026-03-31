@@ -5,7 +5,7 @@ import ContactBlock from "./ContactBlock";
 export default function BrochureUniversities() {
   return (
     <BrochureLayout orgType="Universities and Colleges">
-      <section className="mb-5">
+      <section className="mb-6">
         <p className="text-base text-gray-700 leading-relaxed">
           Ecowaste Management Solutions will provide comprehensive, eco-friendly
           waste management products and cleaning services to institutions across
@@ -14,19 +14,19 @@ export default function BrochureUniversities() {
         </p>
       </section>
 
-      <section className="mb-5">
+      <section className="mb-6">
         <h2 className="text-xl font-bold text-green-800 border-l-4 border-green-600 pl-3 mb-3">
           Key Statistics
         </h2>
         <div className="grid grid-cols-2 gap-4">
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <div className="text-3xl font-extrabold text-blue-700">5--10T</div>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <div className="text-4xl font-extrabold text-blue-700">5--10T</div>
             <div className="text-sm text-gray-600">
               tonnes of waste a large university can generate per day
             </div>
           </div>
-          <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-            <div className="text-3xl font-extrabold text-orange-600">
+          <div className="bg-orange-50 border border-orange-200 rounded-lg p-5">
+            <div className="text-4xl font-extrabold text-orange-600">
               Less than 20%
             </div>
             <div className="text-sm text-gray-600">
@@ -36,12 +36,12 @@ export default function BrochureUniversities() {
         </div>
       </section>
 
-      <div className="grid grid-cols-2 gap-8 mb-5">
+      <div className="grid grid-cols-2 gap-8 mb-6">
         <section>
           <h2 className="text-base font-bold text-green-800 mb-2">
             Waste Challenges on Campus
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "High footfall generating large volumes of waste",
               "Canteen and cafeteria waste with no proper disposal",
@@ -62,7 +62,7 @@ export default function BrochureUniversities() {
           <h2 className="text-base font-bold text-green-800 mb-2">
             What We Will Provide
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "Complete bin setup (Euroline range + standard bins)",
               "Trolleys and waste collection system",
@@ -82,7 +82,7 @@ export default function BrochureUniversities() {
         </section>
       </div>
 
-      <section className="mb-4">
+      <section className="mb-5">
         <h2 className="text-xl font-bold text-green-800 border-l-4 border-green-600 pl-3 mb-3">
           Recommended Package
         </h2>
@@ -96,7 +96,7 @@ export default function BrochureUniversities() {
                 Rs. 75K -- 2.5L
               </span>
             </div>
-            <ul className="space-y-1.5">
+            <ul className="space-y-2">
               {[
                 "Complete bin setup",
                 "Trolleys and collection",
@@ -133,7 +133,7 @@ export default function BrochureUniversities() {
 
       <AddOnsBlock />
 
-      <div className="my-4 bg-green-700 text-white rounded-lg p-4 text-center">
+      <div className="my-5 bg-green-700 text-white rounded-lg p-4 text-center">
         <p className="font-semibold text-base italic">
           "We will transform your campus into a zero-waste model institution."
         </p>

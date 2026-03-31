@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Leaf, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
@@ -28,17 +28,11 @@ export default function Header() {
           className="flex items-center gap-2 group"
           data-ocid="nav.link"
         >
-          <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-            <Leaf className="w-5 h-5 text-primary" />
-          </div>
-          <div className="leading-tight">
-            <span className="block text-sm font-bold text-primary tracking-wide">
-              ECOWASTE
-            </span>
-            <span className="block text-[10px] text-muted-foreground font-medium">
-              Management Solutions
-            </span>
-          </div>
+          <img
+            src="/assets/ecowaste-logo.png"
+            alt="Ecowaste Management Solutions"
+            className="h-12 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop nav */}
@@ -56,7 +50,12 @@ export default function Header() {
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <img
+            src="/assets/gem_logo_-_google_search_-_google_chrome_3_31_2026_2_48_27_pm-019d4332-f026-706c-b8df-aeee641c5cb6.png"
+            alt="Government e-Marketplace"
+            className="h-9 w-auto object-contain"
+          />
           <Button
             asChild
             className="rounded-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold px-5"

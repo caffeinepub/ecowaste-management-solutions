@@ -2,7 +2,6 @@ import {
   Facebook,
   Heart,
   Instagram,
-  Leaf,
   Linkedin,
   Mail,
   MapPin,
@@ -23,17 +22,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-primary" />
-              </div>
-              <div className="leading-tight">
-                <span className="block text-sm font-bold text-primary">
-                  ECOWASTE
-                </span>
-                <span className="block text-[10px] text-muted-foreground font-medium">
-                  Management Solutions
-                </span>
-              </div>
+              <img
+                src="/assets/ecowaste-logo.png"
+                alt="Ecowaste Management Solutions"
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Making India clean and tension-free with comprehensive waste
@@ -123,7 +116,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Social + GEM logo */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
             <div className="flex gap-3">
@@ -147,6 +140,18 @@ export default function Footer() {
               Join us in our mission to make India cleaner, greener, and
               healthier for future generations.
             </p>
+            <div className="mt-4 flex items-center gap-3">
+              <img
+                src="/assets/swach-019d4332-f051-77df-bf6f-2c254dfd36a3.png"
+                alt="Swachh Bharat Abhiyan"
+                className="h-12 w-auto object-contain"
+              />
+              <img
+                src="/assets/gem_logo_-_google_search_-_google_chrome_3_31_2026_2_48_27_pm-019d4332-f026-706c-b8df-aeee641c5cb6.png"
+                alt="Government e-Marketplace"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
 

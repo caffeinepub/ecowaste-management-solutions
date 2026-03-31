@@ -5,7 +5,7 @@ import ContactBlock from "./ContactBlock";
 export default function BrochureOffices() {
   return (
     <BrochureLayout orgType="Offices and Commercial">
-      <section className="mb-5">
+      <section className="mb-6">
         <p className="text-base text-gray-700 leading-relaxed">
           Ecowaste Management Solutions will provide comprehensive, eco-friendly
           waste management products and cleaning services to institutions across
@@ -14,19 +14,19 @@ export default function BrochureOffices() {
         </p>
       </section>
 
-      <section className="mb-5">
+      <section className="mb-6">
         <h2 className="text-xl font-bold text-green-800 border-l-4 border-green-600 pl-3 mb-3">
           Key Statistics
         </h2>
         <div className="grid grid-cols-2 gap-4">
-          <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <div className="text-3xl font-extrabold text-purple-700">30%</div>
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-5">
+            <div className="text-4xl font-extrabold text-purple-700">30%</div>
             <div className="text-sm text-gray-600">
               of urban solid waste comes from commercial buildings
             </div>
           </div>
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <div className="text-3xl font-extrabold text-green-700">
+          <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+            <div className="text-4xl font-extrabold text-green-700">
               Up to 40%
             </div>
             <div className="text-sm text-gray-600">
@@ -37,12 +37,12 @@ export default function BrochureOffices() {
         </div>
       </section>
 
-      <div className="grid grid-cols-2 gap-8 mb-5">
+      <div className="grid grid-cols-2 gap-8 mb-6">
         <section>
           <h2 className="text-base font-bold text-green-800 mb-2">
             Waste Challenges in Offices
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "High paper and plastic waste with no segregation",
               "No floor-wise or department-wise collection",
@@ -63,7 +63,7 @@ export default function BrochureOffices() {
           <h2 className="text-base font-bold text-green-800 mb-2">
             What We Will Provide
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {[
               "Complete bin setup for all floors and departments",
               "Floor-wise waste collection planning",
@@ -83,7 +83,7 @@ export default function BrochureOffices() {
         </section>
       </div>
 
-      <section className="mb-4">
+      <section className="mb-5">
         <h2 className="text-xl font-bold text-green-800 border-l-4 border-green-600 pl-3 mb-3">
           Recommended Packages
         </h2>
@@ -120,7 +120,7 @@ export default function BrochureOffices() {
 
       <AddOnsBlock />
 
-      <div className="my-4 bg-purple-700 text-white rounded-lg p-4 text-center">
+      <div className="my-5 bg-purple-700 text-white rounded-lg p-4 text-center">
         <p className="font-semibold text-base italic">
           "Smart offices choose smart waste management."
         </p>

@@ -1,4 +1,4 @@
-import { ArrowLeft, Leaf, Printer } from "lucide-react";
+import { ArrowLeft, Printer } from "lucide-react";
 
 interface BrochureLayoutProps {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ export default function BrochureLayout({
     <div className="min-h-screen bg-white">
       <style>{`
         @media print {
-          @page { size: A4; margin: 0.8cm; }
+          @page { size: A4; margin: 0.5cm; }
           body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
           .no-print { display: none !important; }
         }
@@ -41,13 +41,15 @@ export default function BrochureLayout({
       </div>
 
       {/* Brochure content */}
-      <div className="max-w-4xl mx-auto px-8 py-8 print:max-w-none print:w-full print:px-0 print:py-0">
+      <div className="max-w-4xl mx-auto px-10 py-10 print:max-w-none print:w-full print:px-0 print:py-0">
         {/* Brochure Header */}
         <div className="flex items-center justify-between border-b-2 border-green-700 pb-5 mb-6 print:mb-5 print:pb-4">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-green-700 flex items-center justify-center">
-              <Leaf className="w-6 h-6 text-white" />
-            </div>
+            <img
+              src="/assets/ecowaste-logo.png"
+              alt="Ecowaste Management Solutions"
+              className="h-14 w-auto object-contain"
+            />
             <div>
               <div className="text-xl font-bold text-green-800 leading-tight">
                 ECOWASTE MANAGEMENT SOLUTIONS
