@@ -142,7 +142,7 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-3">
               <img
-                src="/assets/swach-019d4332-f051-77df-bf6f-2c254dfd36a3.png"
+                src="/assets/generated/swachh-bharat-clean-transparent.png"
                 alt="Swachh Bharat Abhiyan"
                 className="h-12 w-auto object-contain"
               />

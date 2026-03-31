@@ -19,7 +19,6 @@ export default function BrochureLayout({
         }
       `}</style>
 
-      {/* Print controls - hidden when printing */}
       <div className="no-print bg-primary text-primary-foreground py-3 px-4 flex items-center justify-between">
         <a
           href="#brochures"
@@ -40,7 +39,6 @@ export default function BrochureLayout({
         </button>
       </div>
 
-      {/* Brochure content */}
       <div className="max-w-4xl mx-auto px-10 py-10 print:max-w-none print:w-full print:px-0 print:py-0">
         {/* Brochure Header */}
         <div className="flex items-center justify-between border-b-2 border-green-700 pb-5 mb-6 print:mb-5 print:pb-4">
@@ -59,11 +57,20 @@ export default function BrochureLayout({
               </div>
             </div>
           </div>
-          <div className="text-right">
-            <div className="text-sm font-semibold text-gray-600 uppercase tracking-wider">
-              {orgType} Brochure
+          <div className="flex items-center gap-4">
+            <div className="text-right">
+              <div className="text-sm font-semibold text-gray-600 uppercase tracking-wider">
+                {orgType} Brochure
+              </div>
+              <div className="text-xs text-gray-400">
+                ewmsolutions1@gmail.com
+              </div>
             </div>
-            <div className="text-xs text-gray-400">ecowaste.in</div>
+            <img
+              src="/assets/generated/swachh-bharat-clean-transparent.png"
+              alt="Swachh Bharat Abhiyan"
+              className="h-12 w-auto object-contain flex-shrink-0"
+            />
           </div>
         </div>
 
@@ -74,7 +81,16 @@ export default function BrochureLayout({
           <span className="text-sm font-semibold text-green-800">
             EcoWaste Management Solutions -- Building a Cleaner India
           </span>
-          <span className="text-xs text-gray-400">ewmsolutions1@gmail.com</span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-gray-400">
+              ewmsolutions1@gmail.com
+            </span>
+            <img
+              src="/assets/gem_logo_-_google_search_-_google_chrome_3_31_2026_2_48_27_pm-019d4332-f026-706c-b8df-aeee641c5cb6.png"
+              alt="Government e-Marketplace"
+              className="h-7 w-auto object-contain flex-shrink-0"
+            />
+          </div>
         </div>
       </div>
     </div>

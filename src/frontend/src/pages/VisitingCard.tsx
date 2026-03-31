@@ -5,14 +5,14 @@ export default function VisitingCard() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <style>{`
         @media print {
-          @page { size: 90mm 55mm landscape; margin: 0; }
+          @page { size: 54mm 90mm portrait; margin: 0; }
           body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
           .no-print { display: none !important; }
           .card-outer { box-shadow: none !important; border-radius: 0 !important; }
         }
       `}</style>
 
-      {/* Controls */}
+      {/* No-print header bar */}
       <div className="no-print bg-green-700 text-white py-3 px-4 flex items-center justify-between">
         <a
           href="#home"
@@ -33,80 +33,119 @@ export default function VisitingCard() {
       {/* Card preview area */}
       <div className="flex-1 flex items-center justify-center p-8">
         <div
-          className="card-outer w-[90mm] shadow-2xl rounded-lg overflow-hidden"
-          style={{ minHeight: "55mm" }}
+          className="card-outer shadow-2xl rounded-lg overflow-hidden"
+          style={{ width: "54mm", height: "90mm" }}
         >
-          {/* Front of card */}
           <div
-            className="relative flex flex-col justify-between p-4"
+            className="relative flex flex-col items-center justify-between px-3 py-3"
             style={{
               background:
-                "linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%)",
-              minHeight: "55mm",
+                "linear-gradient(160deg, #1b5e20 0%, #2e7d32 55%, #388e3c 100%)",
+              width: "54mm",
+              height: "90mm",
+              boxSizing: "border-box",
             }}
           >
-            {/* Top section: GEM logo + ecowaste logo + company name */}
-            <div className="flex items-center gap-2">
-              <img
-                src="/assets/gem_logo_-_google_search_-_google_chrome_3_31_2026_2_48_27_pm-019d4332-f026-706c-b8df-aeee641c5cb6.png"
-                alt="Government e-Marketplace"
-                className="h-11 w-auto object-contain bg-white rounded p-0.5 flex-shrink-0"
-              />
-              <img
-                src="/assets/ecowaste-logo.png"
-                alt="Ecowaste Management Solutions"
-                className="h-12 w-12 object-contain bg-white rounded-full p-1 flex-shrink-0"
-              />
-              <div>
-                <div className="text-white font-bold text-[11px] tracking-widest uppercase leading-tight">
-                  Ecowaste Management
-                </div>
-                <div className="text-green-200 font-semibold text-[10px] tracking-wider uppercase">
-                  Solutions
-                </div>
-                <div className="text-green-300 text-[8px] mt-0.5 italic">
+            {/* Top: GEM logo + Company logo + name */}
+            <div className="flex flex-col items-center gap-1 w-full">
+              <div className="flex items-center gap-1.5 justify-center w-full">
+                {/* GEM logo */}
+                <img
+                  src="/assets/gem_logo_-_google_search_-_google_chrome_3_31_2026_2_48_27_pm-019d4332-f026-706c-b8df-aeee641c5cb6.png"
+                  alt="Government e-Marketplace"
+                  className="object-contain bg-white rounded flex-shrink-0"
+                  style={{ height: "20px", width: "auto", padding: "1px" }}
+                />
+                {/* Company logo circle */}
+                <img
+                  src="/assets/ecowaste-logo.png"
+                  alt="Ecowaste Management Solutions"
+                  className="object-contain bg-white rounded-full flex-shrink-0"
+                  style={{ height: "36px", width: "36px", padding: "2px" }}
+                />
+              </div>
+              {/* Company name + tagline */}
+              <div className="flex flex-col items-center text-center">
+                <span
+                  className="text-white font-bold leading-tight"
+                  style={{ fontSize: "9.5px", letterSpacing: "0.03em" }}
+                >
+                  Ecowaste Management Solutions
+                </span>
+                <span
+                  className="text-green-300 italic mt-0.5"
+                  style={{ fontSize: "7px" }}
+                >
                   One Partnership. Zero Waste Worries.
-                </div>
+                </span>
               </div>
             </div>
 
             {/* Divider */}
-            <div className="border-t border-green-400/50 my-2" />
+            <div className="w-full border-t border-green-400/40" />
 
-            {/* Middle: Name and designation */}
-            <div>
-              <div className="text-white font-bold text-[14px] tracking-wide">
+            {/* Founder name + designation */}
+            <div className="w-full text-center">
+              <div
+                className="text-white font-bold"
+                style={{ fontSize: "13px", letterSpacing: "0.02em" }}
+              >
                 Varun Raj Gupta
               </div>
-              <div className="text-green-300 text-[9px] font-medium uppercase tracking-widest">
+              <div
+                className="text-green-300 font-medium uppercase tracking-widest mt-0.5"
+                style={{ fontSize: "7px" }}
+              >
                 Founder
               </div>
             </div>
 
-            {/* Bottom: Contact info */}
-            <div className="mt-2 space-y-0.5">
-              <div className="flex items-center gap-1.5 text-white/90 text-[8px]">
-                <Phone className="w-2.5 h-2.5 text-green-300 flex-shrink-0" />
+            {/* Divider */}
+            <div className="w-full border-t border-green-400/40" />
+
+            {/* Contact details */}
+            <div className="w-full flex flex-col gap-1">
+              <div
+                className="flex items-center gap-1 text-white/90"
+                style={{ fontSize: "8px" }}
+              >
+                <Phone
+                  className="text-green-300 flex-shrink-0"
+                  style={{ width: "8px", height: "8px" }}
+                />
                 <span>+91 8800095472</span>
               </div>
-              <div className="flex items-center gap-1.5 text-white/90 text-[8px]">
-                <Mail className="w-2.5 h-2.5 text-green-300 flex-shrink-0" />
+              <div
+                className="flex items-center gap-1 text-white/90"
+                style={{ fontSize: "8px" }}
+              >
+                <Mail
+                  className="text-green-300 flex-shrink-0"
+                  style={{ width: "8px", height: "8px" }}
+                />
                 <span>ewmsolutions1@gmail.com</span>
               </div>
-              <div className="flex items-start gap-1.5 text-white/90 text-[8px]">
-                <MapPin className="w-2.5 h-2.5 text-green-300 flex-shrink-0 mt-0.5" />
+              <div
+                className="flex items-start gap-1 text-white/90"
+                style={{ fontSize: "7.5px" }}
+              >
+                <MapPin
+                  className="text-green-300 flex-shrink-0 mt-px"
+                  style={{ width: "8px", height: "8px" }}
+                />
                 <span>
                   K-303/B, Street No. 4, Mahipalpur Ext., New Delhi 110037
                 </span>
               </div>
             </div>
 
-            {/* Swachh Bharat logo bottom-right */}
-            <div className="absolute bottom-2 right-2">
+            {/* Bottom: Swachh Bharat logo aligned right */}
+            <div className="w-full flex justify-end">
               <img
-                src="/assets/swach-019d4332-f051-77df-bf6f-2c254dfd36a3.png"
+                src="/assets/generated/swachh-bharat-clean-transparent.png"
                 alt="Swachh Bharat Abhiyan"
-                className="h-9 w-auto object-contain bg-white rounded p-0.5"
+                className="object-contain"
+                style={{ height: "24px", width: "auto" }}
               />
             </div>
           </div>
@@ -114,8 +153,7 @@ export default function VisitingCard() {
       </div>
 
       <div className="no-print text-center pb-6 text-sm text-gray-500">
-        Standard business card size: 90mm x 55mm. Click "Print / Save as PDF" to
-        save.
+        Card size: 54mm x 90mm (portrait). Click "Print / Save as PDF" to save.
       </div>
     </div>
   );
