@@ -3,6 +3,7 @@ import {
   ArrowLeft,
   Briefcase,
   Building2,
+  FileText,
   GraduationCap,
   Heart,
   Home,
@@ -10,6 +11,13 @@ import {
 } from "lucide-react";
 
 const brochures = [
+  {
+    id: "cover",
+    icon: FileText,
+    title: "General Cover Page",
+    desc: "A professional cover page for all Ecowaste Management Solutions brochures.",
+    color: "bg-green-50 text-green-700 border-green-200",
+  },
   {
     id: "schools",
     icon: School,

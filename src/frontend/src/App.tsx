@@ -18,6 +18,7 @@ import WasteRealityStats from "./components/WasteRealityStats";
 import WhatsAppButton from "./components/WhatsAppButton";
 import BrochuresIndex from "./pages/BrochuresIndex";
 import VisitingCard from "./pages/VisitingCard";
+import BrochureCover from "./pages/brochures/BrochureCover";
 import BrochureHospitals from "./pages/brochures/BrochureHospitals";
 import BrochureOffices from "./pages/brochures/BrochureOffices";
 import BrochureSchools from "./pages/brochures/BrochureSchools";
@@ -42,6 +43,7 @@ function AppContent() {
   const hash = useHash();
 
   if (hash === "#brochures") return <BrochuresIndex />;
+  if (hash === "#brochure/cover") return <BrochureCover />;
   if (hash === "#brochure/schools") return <BrochureSchools />;
   if (hash === "#brochure/universities") return <BrochureUniversities />;
   if (hash === "#brochure/hospitals") return <BrochureHospitals />;
