@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const waLink =
-    "https://wa.me/918800095471?text=Hello%2C%20I%27m%20interested%20in%20your%20waste%20management%20services.";
+    "https://wa.me/918800095472?text=Hello%2C%20I%27m%20interested%20in%20your%20waste%20management%20services.";
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">

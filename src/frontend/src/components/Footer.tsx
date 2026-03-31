@@ -81,29 +81,43 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
                 <div className="flex flex-col gap-0.5">
                   <a
-                    href="tel:+918800095471"
+                    href="tel:+918800096570"
                     data-ocid="contact.link"
                     className="hover:text-primary transition-colors"
                   >
-                    +91 88000 95471
+                    +91 88000 96570
                   </a>
                   <a
-                    href="tel:+918800095470"
+                    href="tel:+918800095472"
                     data-ocid="contact.link"
                     className="hover:text-primary transition-colors"
                   >
-                    +91 88000 95470
+                    +91 88000 95472
+                  </a>
+                  <a
+                    href="tel:+918800009572"
+                    data-ocid="contact.link"
+                    className="hover:text-primary transition-colors"
+                  >
+                    +91 88000 09572
+                  </a>
+                  <a
+                    href="tel:01149931479"
+                    data-ocid="contact.link"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Tel No. 011 4993 1479
                   </a>
                 </div>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:sintex.star1@gmail.com"
+                  href="mailto:ewmsolutions1@gmail.com"
                   data-ocid="contact.link"
                   className="hover:text-primary transition-colors"
                 >
-                  sintex.star1@gmail.com
+                  ewmsolutions1@gmail.com
                 </a>
               </li>
             </ul>
