@@ -1,12 +1,5 @@
 import { Printer } from "lucide-react";
 
-const LINE_STYLE: React.CSSProperties = {
-  borderBottom: "1px solid #e0e0e0",
-  height: "1px",
-  width: "100%",
-  marginBottom: "24px",
-};
-
 export default function Letterhead() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
@@ -147,51 +140,6 @@ export default function Letterhead() {
               <span>Ref. No.: ___________________</span>
               <span>Date: ___________________</span>
             </div>
-            <div
-              style={{
-                marginBottom: "24px",
-                color: "#bdbdbd",
-                fontSize: "11px",
-                lineHeight: "1.8",
-              }}
-            >
-              To,
-              <br />
-              ___________________________
-              <br />
-              ___________________________
-              <br />
-              ___________________________
-            </div>
-            <div
-              style={{
-                marginBottom: "32px",
-                color: "#bdbdbd",
-                fontSize: "11px",
-              }}
-            >
-              <strong style={{ color: "#757575" }}>Subject:</strong>{" "}
-              _______________________________________________
-            </div>
-            {/* Writing lines */}
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
-            <div style={LINE_STYLE} />
           </div>
 
           {/* FOOTER */}
