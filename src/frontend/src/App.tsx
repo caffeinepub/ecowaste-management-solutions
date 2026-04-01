@@ -17,6 +17,7 @@ import TrustStrip from "./components/TrustStrip";
 import WasteRealityStats from "./components/WasteRealityStats";
 import WhatsAppButton from "./components/WhatsAppButton";
 import BrochuresFull from "./pages/BrochuresFull";
+import Letterhead from "./pages/Letterhead";
 import VisitingCard from "./pages/VisitingCard";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ function AppContent() {
 
   if (hash === "#brochures") return <BrochuresFull />;
   if (hash === "#visiting-card") return <VisitingCard />;
+  if (hash === "#letterhead") return <Letterhead />;
 
   return (
     <>
